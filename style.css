@@ -1,0 +1,179 @@
+:root{
+    --color-01: #1B6BAC;
+    --color-02:#088A85;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background: #0B173B;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+header{
+    padding: 30px;
+   /* border: 20px;*/
+   border-bottom: 1px solid var(--color-01);
+   background: rgba(0, 0, 0, 0.1);
+}
+header div{
+    text-align: center;
+}
+header div a{
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 24px;/*distancia os links*/
+    text-decoration: none;
+}
+
+header div a:hover{
+    color: #01DFD7;
+    transition: color 300ms;
+}
+
+#wrapper{
+    text-align: center;
+    padding: 42px;
+}
+
+#wrapper img{
+    border-radius: 50%;
+    align-items: center;
+    border: 5px solid var(--color-01);
+    height: 300px;
+}
+
+#wrapper h1{
+    margin-top: 32px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper h2{
+    font-size: 24px;
+    font-weight: 50px;
+    line-height: 34px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p{
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+
+}
+
+#wrapper p a{
+    text-decoration: underline;
+    color: var(--color-01);
+    font-weight: bold;
+}
+
+
+
+#sobre{
+    text-align: center;
+    padding: 42px;
+}
+
+#sobre img{
+    align-items: center;
+    height: 200px;
+}
+
+#sobre h1{
+    margin-top: 24px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#sobre h2{
+    font-size: 24px;
+    font-weight: 50px;
+    line-height: 34px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#sobre p{
+    text-align: center;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 24px auto;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+    justify-content: center;
+
+}
+
+#sobre ul{
+    display: block;
+    margin: 10px 750px 50px;
+    font-size: 24px;
+    line-height: 34px;
+    list-style-type: none;
+}
+
+#sobre .links-footer a{
+    font-size: 18px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 400px;
+    margin: 0 24px; 
+   
+
+}
+
+#sobre .links-footer a:hover{
+    color: var(--color-01);
+    transition: color 200ms;
+}
+
+/* ==CARDS== */
+.cards{
+    max-width: 1000px;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card{
+    background-color: var(--color-02);
+}
+
+.card_image-container img{
+    width: 100%;
+}
+
+.card_content,
+.card-info{
+    padding: 24px;
+    font-size: 20px;
+}
+
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.card_price{
+    background-color: var(--color-02);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* ==MODAL== */

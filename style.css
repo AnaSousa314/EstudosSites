@@ -177,3 +177,54 @@ header div a:hover{
 }
 
 /* ==MODAL== */
+.modal-overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;/* faz o modal desaparecer */
+    visibility: hidden;/* faz o modal desaparecer */
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal{
+    color: black;
+    position: absolute;
+    right: 35px;
+    top: 13px;
+    cursor: pointer;
+}
+.modal.active2{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/* MODAL .ACTIVE */
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
